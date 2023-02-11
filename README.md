@@ -7,8 +7,8 @@ A simple library to make sharing a single MudBlazor theme across multiple projec
 using Mudblazor.ThemeHelper;
 ```
 
-### Create a class in your main project the implements `IThemeHelper`
-This is where you will define your theme
+### Create a class in your main project that implements `IThemeHelper`
+*This is where you will define your theme
 ```csharp
 public class ThemeHelperExample : IThemeHelper
 {
@@ -36,7 +36,7 @@ public class ThemeHelperExample : IThemeHelper
 }
 ```
 
-### Add the IThemeHelper help class to Services
+### Add the IThemeHelper help class(created above) to Services
 Somewhere in your `program.cs` or when setting up DI, call the Extension Method
 ```csharp
 //Add Theme Helper
