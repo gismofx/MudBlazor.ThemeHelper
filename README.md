@@ -36,11 +36,11 @@ public class ThemeHelperExample : IThemeHelper
 }
 ```
 
-### Add the help class to Services
+### Add the IThemeHelper help class to Services
 Somewhere in your `program.cs` or when setting up DI, call the Extension Method
 ```csharp
 //Add Theme Helper
-services.AddMudBlazorThemeHelper<CLTheme>();
+services.AddMudBlazorThemeHelper<ThemeHelperExample>();
 ```
 
 ### And in your Razor Layouts:
