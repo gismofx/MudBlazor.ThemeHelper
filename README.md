@@ -37,7 +37,7 @@ public class ThemeHelperExample : IThemeHelper
 ```
 
 ### Add the IThemeHelper theme class(created above) to Services
-somewhere in your `program.cs` or when setting up DI, call the Extension Method. Info: It's added as a singleton service.
+Somewhere in your `program.cs` or when setting up DI, call the Extension Method. Info: It's added as a singleton service.
 ```csharp
 //Add Theme Helper
 services.AddMudBlazorThemeHelper<ThemeHelperExample>();
