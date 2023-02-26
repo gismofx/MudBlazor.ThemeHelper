@@ -1,11 +1,19 @@
 ﻿using MudBlazor;
 namespace MudBlazor.ThemeHelper
 {
-    public class ThemeHelper : IThemeHelper
+    public class ThemeHelperExample : IThemeHelper
     {
         public MudTheme GetTheme()
         {
-            throw new NotImplementedException();
+            //Define your theme here!
+            return new MudTheme();
+        }
+
+        public object GetSharedAppData()
+        {
+            return new Dictionary<string, object>() {
+                {"Title", "MudTheme Helper!"}
+            };
         }
     }
 }

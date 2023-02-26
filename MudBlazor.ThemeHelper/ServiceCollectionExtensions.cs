@@ -9,6 +9,12 @@ namespace MudBlazor.ThemeHelper
 {
     public static class ServiceCollectionExtensions
     {
+        /// <summary>
+        /// Create the ThemeHelper service as a Singleton to be injected throughout your app
+        /// </summary>
+        /// <typeparam name="TThemeHelper">Class that Implements IThemeHelper</typeparam>
+        /// <param name="services"></param>
+        /// <returns></returns>
         public static IServiceCollection AddMudBlazorThemeHelper<TThemeHelper>(this IServiceCollection services) where TThemeHelper : IThemeHelper
         {
             return services.AddSingleton(typeof(IThemeHelper),typeof(TThemeHelper));

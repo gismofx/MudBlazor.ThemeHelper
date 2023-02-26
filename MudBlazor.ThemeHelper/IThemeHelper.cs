@@ -15,5 +15,12 @@ namespace MudBlazor.ThemeHelper
         /// </summary>
         /// <returns></returns>
         MudTheme GetTheme();
+
+        /// <summary>
+        /// Other Application Data that you can share across projects such as a Title, or name, etc
+        /// Suggest a Dictionary<string, object>
+        /// </summary>
+        /// <returns></returns>
+        object GetSharedAppData();
     }
 }
