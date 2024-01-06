@@ -11,14 +11,21 @@
 
 
 	<ItemGroup>
-    <Content Include="..\LICENSE.txt" Link="LICENSE.txt" Pack="true" PackagePath="\"/>
+    <Content Include="..\LICENSE.txt" Link="LICENSE.txt" Pack="true" PackagePath="\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\README.md" Link="README.md" Pack="true" PackagePath="\"/>
+    <None Include="..\README.md" Link="README.md" Pack="true" PackagePath="\" />
   </ItemGroup>
 	<PropertyGroup>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+		<Title>Mudblazor Theme Helper</Title>
+		<PackageProjectUrl>https://github.com/gismofx/MudBlazor.ThemeHelper</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/gismofx/MudBlazor.ThemeHelper</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageTags>Blazor;Mudblazor;Theme</PackageTags>
+		<Description>A simple library to make sharing a single MudBlazor theme across multiple projects and into Razor Class Libraries that use MudBlazor.
+</Description>
 	</PropertyGroup>
 	<!--<PropertyGroup>
 		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
