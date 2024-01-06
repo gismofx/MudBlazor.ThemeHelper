@@ -1,7 +1,8 @@
 ﻿using MudBlazor;
-namespace MudBlazor.ThemeHelper
+
+namespace Community.MudBlazor.ThemeHelper.Example
 {
-    public class ThemeHelperExample : IThemeHelper
+    public class ThemeHelperExample : IThemeHelper<object>
     {
         public MudTheme GetTheme()
         {
@@ -14,6 +15,16 @@ namespace MudBlazor.ThemeHelper
             return new Dictionary<string, object>() {
                 {"Title", "MudTheme Helper!"}
             };
+        }
+
+        public string AppName()
+        {
+            return "Demo Application";
+        }
+
+        public async Task<MudTheme> GetThemeAsync()
+        {
+            return await Task.Run(() => GetTheme());
         }
     }
 }

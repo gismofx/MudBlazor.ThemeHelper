@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MudBlazor.ThemeHelper", "MudBlazor.ThemeHelper\MudBlazor.ThemeHelper.csproj", "{3AE23196-F3F3-4A0F-97CF-FBC78F66E1F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Community.MudBlazor.ThemeHelper", "MudBlazor.ThemeHelper\Community.MudBlazor.ThemeHelper.csproj", "{3AE23196-F3F3-4A0F-97CF-FBC78F66E1F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

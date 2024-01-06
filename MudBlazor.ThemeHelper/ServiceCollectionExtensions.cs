@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MudBlazor.ThemeHelper
+namespace Community.MudBlazor.ThemeHelper
 {
     public static class ServiceCollectionExtensions
     {
@@ -15,9 +15,24 @@ namespace MudBlazor.ThemeHelper
         /// <typeparam name="TThemeHelper">Class that Implements IThemeHelper</typeparam>
         /// <param name="services"></param>
         /// <returns></returns>
-        public static IServiceCollection AddMudBlazorThemeHelper<TThemeHelper>(this IServiceCollection services) where TThemeHelper : IThemeHelper
+        //public static IServiceCollection AddMudBlazorThemeHelper<TThemeHelper<T>>(this IServiceCollection services) where TThemeHelper : IThemeHelper<T>
+        //{
+        //    return services.AddSingleton(typeof(IThemeHelper<T>),typeof(TThemeHelper<T>));
+        //}
+
+        //public static IServiceCollection AddMudBlazorThemeHelper<TThemeHelper<T>>(this IServiceCollection services) where TThemeHelper : IThemeHelper<T>
+        //{
+        //    return services.AddSingleton(typeof(IThemeHelper<>), typeof(TThemeHelper));
+        //}
+
+        //public static IServiceCollection AddMudBlazorThemeHelper<T>(this IServiceCollection services) where T : IThemeHelper
+        //{
+        //    return services.AddSingleton(typeof(IThemeHelper<T>), typeof(T));
+        //}
+
+        public static IServiceCollection AddMudBlazorThemeHelper<TThemeHelper,T>(this IServiceCollection services) where TThemeHelper: IThemeHelper<T>
         {
-            return services.AddSingleton(typeof(IThemeHelper),typeof(TThemeHelper));
+            return services.AddSingleton(typeof(IThemeHelper<T>), typeof(TThemeHelper));
         }
 
         //public static IServiceCollection AddTransientRepository<TPoco>(this IServiceCollection services) where TPoco : class
