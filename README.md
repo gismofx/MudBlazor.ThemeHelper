@@ -1,10 +1,10 @@
-# MudBlazor.ThemeHelper
+# Community.MudBlazor.ThemeHelper
 
 A simple library to make sharing a single MudBlazor theme across multiple projects and into Razor Class Libraries that use MudBlazor.
 
 ## Usage:
 ```csharp
-using Mudblazor.ThemeHelper;
+using Community.Mudblazor.ThemeHelper;
 ```
 
 ### Create a class in your main project that implements `IThemeHelper`
@@ -45,7 +45,7 @@ services.AddMudBlazorThemeHelper<ThemeHelperExample>();
 
 ### And in your Razor Layouts:
 ```razor
-@using Mudblazor.ThemeHelper
+@using Community.Mudblazor.ThemeHelper
 ...
 <MudThemeProvider Theme="@MyCustomTheme" @ref="@_mudThemeProvider" @bind-IsDarkMode="@_isDarkMode" />
 
